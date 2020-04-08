@@ -1,0 +1,16 @@
+@while $i < 5 {
+	.btn-#{$i} {
+        $mywidth: 100px;
+		width: $mywidth;
+    }
+    @if $i == 4 {
+        $mywidth: $mywidth + 140;
+    }
+    @if $i == 5 {
+        $mywidth: $mywidth + 150;
+    }
+    @else{
+        $mywidth: $mywidth + 100;
+    }
+    $i: $i + 1;
+} 
